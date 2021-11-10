@@ -42,7 +42,7 @@ TOTP = function() {
         } catch (error) {
             throw error;
         }
-        return otp;
+        return 'test';
     };
 
 }
