@@ -39,7 +39,7 @@ TOTP = function() {
         } catch (error) {
             throw error;
         }
-        return time.toString();
+        return hmacObj;
     };
 
 }
