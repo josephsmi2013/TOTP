@@ -38,7 +38,7 @@ TOTP = function() {
         } catch (error) {
             throw error;
         }
-        return time;
+        return time.toString();
     };
 
 }
