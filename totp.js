@@ -34,6 +34,7 @@ TOTP = function() {
         try {
             var epoch = Math.round(new Date().getTime() / 1000.0);
             var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, "0");
+            var hmacObj = new jsSHA(time, "HEX");
 
         } catch (error) {
             throw error;
