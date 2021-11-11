@@ -34,12 +34,12 @@ TOTP = function() {
         try {
             var epoch = Math.round(new Date().getTime() / 1000.0);
             var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, "0");
-
+            secret = 'testing';
 
         } catch (error) {
             throw error;
         }
-        return 'test';
+        return secret;
     };
 
 }
