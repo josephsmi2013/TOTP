@@ -39,7 +39,7 @@ TOTP = function() {
         } catch (error) {
             throw error;
         }
-        return hmacObj;
+        return secret;
     };
 
 }
