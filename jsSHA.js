@@ -2309,5 +2309,3 @@ TOTP = function() {
     };
 
 }
-
-pm.environment.set("OTP", otp);
